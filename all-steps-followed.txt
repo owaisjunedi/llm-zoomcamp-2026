@@ -1,0 +1,27 @@
+# Python package manager
+> pip install uv 
+
+# Initialize the project and inside this we add dependencies
+> uv init
+
+# Adding the below dependencies
+> uv add requests minsearch openai jupyter python-dotenv
+
+- Created the file notebook.ipynb and run code in it
+- It will ask us to enable the Python + Jupyter Externsion and select the Codespace Python Environment
+
+- Create .env (File contains are secret keys)
+- Goto https://platform.openai.com/login
+- Login
+- Created project for this course
+- Create a new API Key
+
+- Create .gitignore and add .venv and .env
+
+- Import in our notebook.ipynb
+from dotenv import load_dotenv
+load_dotenv()
+
+- Import in our notebook.ipynb
+from openai import OpenAI
+openai_client = OpenAI()
